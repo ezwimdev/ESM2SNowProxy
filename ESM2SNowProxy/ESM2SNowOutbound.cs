@@ -8,7 +8,7 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace ESM2SNowProxy
 {
-    public static class Function1
+    public static class ESM2SNowOutbound
     {
         [FunctionName("Function1")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
